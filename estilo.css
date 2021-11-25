@@ -1,0 +1,18 @@
+#pizzaria {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.cinza {
+    background-color: rgb(200, 200, 200);
+}
+#pizzaria td {  
+    padding: 5px;
+}
+#pizzaria tr:hover {background-color: rgb(155, 161, 248);
+}
+td.desc {
+width: 500px;
+}
+img {
+    width: 100px;
+}
