@@ -6,42 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilo.css">
+    <script language="javascript" src="funcoes.js"></script>
 </head>
 <body>
 <table id="pizzaria">
-    <caption style="font-size: 25px;">Pizzaria Massa Fresca</caption>
-    <th>
-        <tr style="background-color: green; text-align: center;">
-            <td>Nome da Pizza</td>
-            <td class="desc">Descrição</td>
-            <td>Imagem</td>
-            <td>Preço</td>
+    <caption style="font-size: 45px;">Pizzaria Massa Fresca</caption>
+    <thead>
+        <tr>
+            <th style="width:20%">Nome do item</td>
+            <th class="desc" style="width:40%">Descrição</td>
+            <th style="width:20%">Imagem</td>
+            <th style="width:20%">Preço</td>
         </tr>
-    </th>
-        <tr class="cinza">
+    </thead>
+        <tr onmouseover="mudaFoto('pz_calabresa.jpg')" onmouseout="mudaFoto('fundo.png')"> 
             <td>Calabresa</td>
             <td>Calabresa e queijo</td>
             <td><img src="pz_calabresa.jpg"></td>
-            <td>R$ 55,00</td>
+            <td class="preco">R$ 55,00</td>
         </tr>
-        <tr>
-            <td >Frango</td>
+        <tr onmouseover="mudaFoto('pz_frango.jpg')" onmouseout="mudaFoto('fundo.png')">
+            <td>Frango</td>
             <td>Frango e queijo</td>
             <td><img src="pz_frango.jpg"></td>
-            <td>R$ 55,00</td>
+            <td class="preco">R$ 55,00</td>
         </tr>
-        <tr class="cinza ">
+        <tr onmouseover="mudaFoto('pz_4queijos.jpg')" onmouseout="mudaFoto('fundo.png')">
             <td>4 queijos</td>
             <td>Mussarela, lanche, parmesão e provolone</td>
             <td><img src="pz_4queijos.jpg"></td>
-            <td>R$ 60,00</td>
+            <td class="preco">R$ 60,00</td>
         </tr>
-        <tr>
+        <tr onmouseover="mudaFoto('pz_marguerita.jpg')" onmouseout="mudaFoto('fundo.png')">
             <td>Marguerita</td>
             <td>Queijos, tomate e rúcula</td>
-            <td><img src="pz_4queijos.jpg"></td>
-            <td>R$ 70,00</td>
+            <td><img src="pz_marguerita.jpg"></td>
+            <td class="preco">R$ 70,00</td>
+        </tr>
+        <tr onmouseover="mudaFoto('suco_laranja.jpg')" onmouseout="mudaFoto('fundo.png')">
+            <td>Suco de Laranja</td>
+            <td>Suco de Laranja da Fruta</td>
+            <td><img src="suco_laranja.jpg"></td>
+            <td class="preco">R$ 12,00</td>
         </tr>
 </table>
+<br>
+<div><img id="tipo_pizza" src="fundo.png" style="width:350px;"></div>
 </body>
 </html>
