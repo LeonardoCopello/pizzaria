@@ -10,13 +10,13 @@
 </head>
 <body>
 <table id="pizzaria">
-    <caption style="font-size: 45px;">Pizzaria Massa Fresca</caption>
+    <caption>Pizzaria Massa Fresca</caption>
     <thead>
         <tr>
-            <th style="width:20%">Nome do item</td>
-            <th class="desc" style="width:40%">Descrição</td>
-            <th style="width:20%">Imagem</td>
-            <th style="width:20%">Preço</td>
+            <th id="nomeItem">Nome do item</td>
+            <th class="desc">Descrição</td>
+            <th id="imagem">Imagem</td>
+            <th id="preco">Preço</td>
         </tr>
     </thead>
         <tr onmouseover="mudaFoto('pz_calabresa.jpg')" onmouseout="mudaFoto('fundo.png')"> 
@@ -43,7 +43,7 @@
             <td><img src="pz_marguerita.jpg"></td>
             <td class="preco">R$ 70,00</td>
         </tr>
-        <tr onmouseover="mudaFoto('suco_laranja.jpg')" onmouseout="mudaFoto('fundo.png')">
+        <tr onmouseover="mudaFoto('suco_laranja.jpg'); SucoDeLaranja();"  onmouseout="mudaFoto('fundo.png'); semDesc();">
             <td>Suco de Laranja</td>
             <td>Suco de Laranja da Fruta</td>
             <td><img src="suco_laranja.jpg"></td>
@@ -51,6 +51,10 @@
         </tr>
 </table>
 <br>
-<div><img id="tipo_pizza" src="fundo.png" style="width:350px;"></div>
+<div class="demo">
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/Oun7pW4GtQs">"></iframe>
+    <img id="tipo_pizza" src="fundo.png" style="width:350px;">
+    <h1 class="saborPizzaSuco"></h1>
+</div>
 </body>
 </html>

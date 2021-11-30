@@ -1,6 +1,9 @@
 table {
     width:100%;
 }
+caption {
+    font-size: 45px;
+}
 th {
     background-color: green;
     text-align: center;
@@ -32,4 +35,49 @@ img {
 }
 img#tipo_pizza {
     border: 8px solid green;
+}
+#nomeItem {
+    display:20%;
+}
+#desc {
+    display:40%;
+}
+#imagem {
+    display:20%;
+}
+#preco {
+    display:20%;
+}
+.demo {
+    display:inline;
+}
+iframe {
+    float: left;
+}
+#tipo_pizza {
+    float:right;
+}
+@media (max-width: 768px) {
+    caption {
+        font-size:20px;
+    }
+    th {
+        font-size: 18px;
+        }
+    td {
+        font-size: 16px;
+    }
+    iframe {
+        display:block;
+        float:none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #tipo_pizza {
+        display:block;
+        float:none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
