@@ -1,9 +1,6 @@
-function mudaFoto(foto) {
+function mudaFoto(foto,nome,descr,precoPS) {
 	document.getElementById("tipo_pizza").src = foto;
-}
-function SucoDeLaranja() {
-	document.getElementById("saborPizzaSuco").innerHTML = "Suco de Laranja"
-}
-function semDesc() {
-	document.getElementById("saborPizzaSuco").innerHTML = "Suco de Laranja"
+	document.getElementById('saborPizzaSuco').innerHTML = nome
+	document.getElementById('DescricaoPizzaSuco').innerHTML = descr
+	document.getElementById('PrecoPizzaSuco').innerHTML = precoPS
 }

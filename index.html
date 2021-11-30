@@ -19,42 +19,48 @@
             <th id="preco">Preço</td>
         </tr>
     </thead>
-        <tr onmouseover="mudaFoto('pz_calabresa.jpg')" onmouseout="mudaFoto('fundo.png')"> 
+        <tr onmouseover="mudaFoto('pz_calabresa.jpg','Pizza Calabresa','Calabresa e Queijo','R$ 55,00')" onmouseout="mudaFoto('fundo.png','','','')"> 
             <td>Calabresa</td>
             <td>Calabresa e queijo</td>
-            <td><img src="pz_calabresa.jpg"></td>
+            <td><img class="img_inside" src="pz_calabresa.jpg" ></td>
             <td class="preco">R$ 55,00</td>
         </tr>
-        <tr onmouseover="mudaFoto('pz_frango.jpg')" onmouseout="mudaFoto('fundo.png')">
+        <tr onmouseover="mudaFoto('pz_frango.jpg','Pizza de Frango','Frango e queijo','R$ 55,00')" onmouseout="mudaFoto('fundo.png','','','')">
             <td>Frango</td>
             <td>Frango e queijo</td>
-            <td><img src="pz_frango.jpg"></td>
+            <td><img class="img_inside" src="pz_frango.jpg"></td>
             <td class="preco">R$ 55,00</td>
         </tr>
-        <tr onmouseover="mudaFoto('pz_4queijos.jpg')" onmouseout="mudaFoto('fundo.png')">
+        <tr onmouseover="mudaFoto('pz_4queijos.jpg','Pizza 4 queijos','Mussarela, lanche, parmesão e provolone','R$ 60,00')" onmouseout="mudaFoto('fundo.png','','','')">
             <td>4 queijos</td>
             <td>Mussarela, lanche, parmesão e provolone</td>
-            <td><img src="pz_4queijos.jpg"></td>
+            <td><img class="img_inside" src="pz_4queijos.jpg"></td>
             <td class="preco">R$ 60,00</td>
         </tr>
-        <tr onmouseover="mudaFoto('pz_marguerita.jpg')" onmouseout="mudaFoto('fundo.png')">
+        <tr onmouseover="mudaFoto('pz_marguerita.jpg','Pizza Marguerita','Queijos, tomate e rúcula','R$ 70,00')" onmouseout="mudaFoto('fundo.png','','','')">
             <td>Marguerita</td>
             <td>Queijos, tomate e rúcula</td>
-            <td><img src="pz_marguerita.jpg"></td>
+            <td><img class="img_inside" src="pz_marguerita.jpg"></td>
             <td class="preco">R$ 70,00</td>
         </tr>
-        <tr onmouseover="mudaFoto('suco_laranja.jpg'); SucoDeLaranja();"  onmouseout="mudaFoto('fundo.png'); semDesc();">
+        <tr onmouseover="mudaFoto('suco_laranja.jpg','Suco de Laranja','Laranja da Fruta','R$ 12,00')" onmouseout="mudaFoto('fundo.png','','','')";>
             <td>Suco de Laranja</td>
             <td>Suco de Laranja da Fruta</td>
-            <td><img src="suco_laranja.jpg"></td>
+            <td><img class="img_inside" src="suco_laranja.jpg"></td>
             <td class="preco">R$ 12,00</td>
         </tr>
 </table>
 <br>
-<div class="demo">
+<div class="quadro">
     <iframe width="420" height="315" src="https://www.youtube.com/embed/Oun7pW4GtQs">"></iframe>
-    <img id="tipo_pizza" src="fundo.png" style="width:350px;">
-    <h1 class="saborPizzaSuco"></h1>
+        <div>
+        <img id="tipo_pizza" src="fundo.png">
+            <div id="DescInd">
+                <h1 id="saborPizzaSuco"></h1>
+                <h1 id="DescricaoPizzaSuco"></h1>
+                <h1 id="PrecoPizzaSuco"></h1>
+            </div>
+        </div>
 </div>
 </body>
 </html>
