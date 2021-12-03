@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script language="javascript" src="funcoes2.js"></script>
+</head>
+<body>
+<table id="pizzaria">
+    <caption>Pizzaria Massa Fresca</caption>
+    <thead>
+        <tr>
+            <th id="nomeItem">Nome do item</td>
+            <th id="desc">Descrição</td>
+            <th id="imagem">Imagem</td>
+            <th id="preco">Preço</td>
+        </tr>
+    </thead>
+    <tr onmouseover="mudaFoto(1)" onmouseout="semNada('fundo.png')";> 
+    <td>Calabresa</td>
+            <td>Calabresa e queijo</td>
+            <td><img class="img_inside" src="pz_calabresa.jpg" ></td>
+            <td class="preco">R$ 55,00</td>
+        </tr>
+        <tr onmouseover="mudaFoto(2)" onmouseout="semNada('fundo.png')";>
+            <td>Frango</td>
+            <td>Frango e queijo</td>
+            <td><img class="img_inside" src="pz_frango.jpg"></td>
+            <td class="preco">R$ 55,00</td>
+        </tr>
+        <tr onmouseover="mudaFoto(3)" onmouseout="semNada('fundo.png')";>
+            <td>4 queijos</td>
+            <td>Mussarela, lanche, parmesão e provolone</td>
+            <td><img class="img_inside" src="pz_4queijos.jpg"></td>
+            <td class="preco">R$ 60,00</td>
+        </tr>
+        <tr onmouseover="mudaFoto(4)" onmouseout="semNada('fundo.png')";>
+            <td>Marguerita</td>
+            <td>Queijos, tomate e rúcula</td>
+            <td><img class="img_inside" src="pz_marguerita.jpg"></td>
+            <td class="preco">R$ 70,00</td>
+        </tr>
+        <tr onmouseover="mudaFoto(5)" onmouseout="semNada('fundo.png')";>
+            <td>Suco de Laranja</td>
+            <td>Suco de Laranja da Fruta</td>
+            <td><img class="img_inside" src="suco_laranja.jpg"></td>
+            <td class="preco">R$ 12,00</td>
+        </tr>
+</table>
+<br>
+<div class="quadro">
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/Oun7pW4GtQs">"></iframe>
+        <div>
+        <img id="tipo_pizza" src="fundo.png">
+            <div id="DescInd">
+                <h1 id="saborPizzaSuco"></h1>
+                <h1 id="DescricaoPizzaSuco"></h1>
+                <h1 id="PrecoPizzaSuco"></h1>
+            </div>
+            <div id="sobreposicao" >
+
+            </div>
+        </div>
+</div>
+</body>
+</html>
