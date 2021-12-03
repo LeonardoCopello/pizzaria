@@ -4,13 +4,16 @@ table {
 }
 /* Configuração do caption da tabela*/
 caption {
-    font-size: 45px;
+    font-size: 3vw;
 }
 /*Configuração do head da tabela*/
 th {
     background-color: green;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.4vw;
+}
+td {
+    font-size: 2vw;
 }
 /*Configuração de fonte da tabela*/
 #pizzaria {
@@ -52,9 +55,7 @@ img#tipo_pizza {
     display:40%;
 }
 /* Configuração Texto ao passar o mouse sobre o item */
-.quadro {
-    display:inline;
-}
+
       /* Video */
 iframe {
     float: left;
@@ -73,16 +74,29 @@ iframe {
     margin-right: 20px;
 }
 /* Configurações Responsividade */
-@media (max-width: 768px) {
-    caption {
-        font-size:20px;
+@media (max-width: 1000px) {
+    iframe {
+        width: 150px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
-    th {
-        font-size: 18px;
-        }
-    td {
+    #tipo_pizza {
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #DescInd {
+        max-width: 100px;
+    }
+    #DescInd h1 {
         font-size: 16px;
     }
+
+}
+
+
+@media (max-width: 768px) {
     iframe {
         width: 150px;
         height: auto;
